@@ -3,19 +3,21 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-   <dir><figure className="bg-red-400 rounded-xl p-8 dark:bg-slate-800">
-  <img className="w-24 h-24 rounded-full mx-auto" src="/Aslam.jpg" alt="" width="384" height="512"/>
-  <div className="pt-6 space-y-4">
+ <dir><figure className="md:flex bg-yellow-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+  <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="/Aslam.jpg" alt="" width="384" height="512"/>
+  <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
     <blockquote>
       <p className="text-lg font-medium">
-        “Hello, my name is Muhammad Aslam. I am from Rahim Yar Khan and currently pursuing a Bachelor’s degree in Cyber Security at Khwaja Fareed University of Engineering and Information Technology (KFUEIT).”
+        “
+Hi, I'm Muhammad Aslam from Rahim Yar Khan. I'm currently studying for a Bachelor's degree in Cyber Security at Khwaja Fareed University of Engineering and Information Technology (KFUEIT).
+”
       </p>
     </blockquote>
-    <figcaption className="">
-      <div>
+    <figcaption className="font-medium">
+      <div className="text-sky-500 dark:text-sky-400">
         Muhammad Aslam
       </div>
-      <div>
+      <div className="text-slate-700 dark:text-slate-500">
         Cyber Security Engineer, KFUEIT
       </div>
     </figcaption>
